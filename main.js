@@ -41,3 +41,35 @@ const juanita=new Student(
         "Curso de Creación de Personajes",
     ],
 );
+
+
+//**    Clase 6    */
+//**    Clases en JavaScript    */
+
+
+//**    Prototipos con la sintaxis de Clases    */
+
+class Student2{
+    constructor({
+        name,
+        cursosAprobados=[],
+        age,
+        email,
+    }){
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.cursosAprobados = cursosAprobados;
+    }
+aprobarCurso(nuevoCursito){
+    this.cursosAprobados.push(nuevoCursito);
+}}
+const miguelito = new Student2({
+    name:"Miguel",
+    age:28,
+    email:"miguelito@platzi.com",
+    cursosAprobados:[
+        "Curso Análisis de Negocios para Ciencia de Datos",
+        "Curso Principios de visualización de Datos para BI",
+    ],
+});
